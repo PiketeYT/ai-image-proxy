@@ -6,8 +6,8 @@ export default async function handler(req, res) {
 
     const { prompt, style, images } = req.body;
 
-    // Pega aquí tu API Key de Google Generative AI
-    const API_KEY = const API_KEY = process.env.GOOGLE_API_KEY;
+    // Usar la API Key desde variable de entorno
+    const API_KEY = process.env.GOOGLE_API_KEY;
 
     const contents = [
       {
